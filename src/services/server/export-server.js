@@ -1,4 +1,4 @@
-const ServerIP = "https://6.51.111.19:443";
+const ServerIP = "https://pet-teaching-wildcat.ngrok-free.app";
 
 const AppName = "remo";
 
