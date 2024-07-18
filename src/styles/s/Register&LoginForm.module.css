@@ -1,0 +1,91 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.formContainer {
+  width: 300px;
+  padding: 20px;
+  background-color: var(--FormBackgroundColor);
+  border-radius: 10px;
+  box-shadow: var(--BoxShadow);
+  transition: transform 0.3s ease-in-out;
+}
+
+.formContainer:hover {
+  transform: scale(1.05);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--PrimaryColor);
+}
+
+.toggle {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.toggle button {
+  padding: 10px 20px;
+  border: none;
+  background-color: var(--PrimaryColor);
+  color: var(--TextColor);
+  cursor: pointer;
+  font-size: 16px;
+  margin: 0 5px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.toggle .active {
+  background-color: var(--HoverColor);
+}
+
+.formGroup {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: var(--PrimaryColor);
+}
+
+.inputField {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid var(--InputBorderColor);
+  background-color: var(--BackgroundColor);
+  color: var(--TextColor);
+  border-radius: 5px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.inputField:focus {
+  border-color: var(--InputFocusBorderColor);
+  outline: none;
+}
+
+.submitButton {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--PrimaryColor);
+  color: var(--TextColor);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.submitButton:hover {
+  background-color: var(--HoverColor);
+}

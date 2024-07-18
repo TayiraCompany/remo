@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Home {
+  
+}
+
+/* ToolBar */
+.ToolBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background: transparent;
+  border-radius: 6px;
+  backdrop-filter: blur(30px);
+  box-shadow: var(--BoxShadow);
+}
+
+.items-ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  color: var(--TextColor);
+  margin-right: auto;
+}
+
+.items-li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background: transparent;
+  color: var(--TextColor);
+  backdrop-filter: blur(30px);
+  border-radius: 4px;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.items-li:hover {
+  background: var(--HoverColor);
+  transform: translateY(-3px);
+}
+
+.avatar {
+  border-radius: 50%;
+  border: 2px solid var(--TextColor);
+}
+
+.mobile-design {
+  visibility: hidden;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: var(--TextColor);
+}
+
+@media (max-width: 480px) {
+  .ToolBar {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .mobile-design {
+    visibility: visible;
+  }
+
+  .items-ul {
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    width: 100%;
+  }
+
+  .items-ul.open {
+    display: flex;
+  }
+
+  .items-li {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+  }
+}
